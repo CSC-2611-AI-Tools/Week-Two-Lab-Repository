@@ -11,7 +11,7 @@
 ### Part 3: Creating the ```draw_unit_circle(width)``` method
 - [ ]  Create a method called ```draw_unit_circle(width)``` that takes in a single parameter (an integer representing the height and width of the 
  quarter circle to be drawn). This method should draw a unit circle with a corresponding bounding box for the given input size (e.g., if “9” 
-- is passed into this method, the unit circle above should be drawn).
+ is passed into this method, the unit circle above should be drawn).
 
 ### Part 4: Creating the ```generate_pi_given_error(delta)``` method
  - [ ] Create a method called ```generate_pi_given_error(delta)``` that takes in a floating point number and calculates the estimate of pi that requires 
