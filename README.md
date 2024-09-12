@@ -63,20 +63,20 @@ We use a radius of 8.5 pixels since we want the distance to the center of the pi
 - is passed into this method, the unit circle above should be drawn).
 
 ### Part 4: Creating the ```generate_pi_given_error(delta)``` method
-Create a method called ```generate_pi_given_error(delta)``` that takes in a floating point number and calculates the estimate of pi that requires 
+ - [ ] Create a method called ```generate_pi_given_error(delta)``` that takes in a floating point number and calculates the estimate of pi that requires 
 the least amount of “pixels” to be within the defined delta value of pi. The number of pixels generated should also be returned (as a second 
 return value).
 
 ### Part 5: Implementing the Solution
-If you implement your solution in a .py file then create a simple menu that allows a user running this script to interact with the functionality
+- [ ] If you implement your solution in a .py file then create a simple menu that allows a user running this script to interact with the functionality
 described above. If you are using a Jupyter notebook then have one of the cells at the bottom of the notebook contain the input parameters to 
 the script.
 
 
 ### Part 6: Submission Guidelines
-Submit your implementation file to Canvas to be graded.
+- [ ] Submit your implementation file to Canvas to be graded.
 
 
 ### Other Guidelines
-Make sure your code is readable - it should follow the PEP 8 Style guide. Specifically, you should have docstrings on your methods and methods 
+- [ ]Make sure your code is readable - it should follow the PEP 8 Style guide. Specifically, you should have docstrings on your methods and methods 
 and variables should follow the lowercase_with_underscores naming convention.
