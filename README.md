@@ -48,7 +48,7 @@ We use a radius of 8.5 pixels since we want the distance to the center of the pi
 - distance = squareRoot(42 + 72) = squareRoot(16 + 49) = squareRoot(65) = 8.06.
 
 ## Instructions
-- [] Submit .ipynb or .py files. Make sure the file name contains your FULL NAME.
-- [] Part 2: Create a method generate_pi_estimate(width, draw) that takes in two parameters:
-  - []An integer that defines the width and height (in “pixels”) of the quarter circle you will use to estimate the value of pi with.
-  - [] A boolean value that says whether the unit circle (with the corresponding bounding box shown above) is displayed.
+- [ ] Submit .ipynb or .py files. Make sure the file name contains your FULL NAME.
+- [ ] Part 2: Create a method generate_pi_estimate(width, draw) that takes in two parameters:
+  - [ ]An integer that defines the width and height (in “pixels”) of the quarter circle you will use to estimate the value of pi with.
+  - [ ] A boolean value that says whether the unit circle (with the corresponding bounding box shown above) is displayed.
