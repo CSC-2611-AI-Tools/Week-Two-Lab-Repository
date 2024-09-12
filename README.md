@@ -10,7 +10,7 @@
 
 ### Part 3: Creating the ```draw_unit_circle(width)``` method
 - [ ]  Create a method called ```draw_unit_circle(width)``` that takes in a single parameter (an integer representing the height and width of the 
-- quarter circle to be drawn). This method should draw a unit circle with a corresponding bounding box for the given input size (e.g., if “9” 
+ quarter circle to be drawn). This method should draw a unit circle with a corresponding bounding box for the given input size (e.g., if “9” 
 - is passed into this method, the unit circle above should be drawn).
 
 ### Part 4: Creating the ```generate_pi_given_error(delta)``` method
