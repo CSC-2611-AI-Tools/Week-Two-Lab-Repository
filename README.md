@@ -78,5 +78,5 @@ the script.
 
 
 ### Other Guidelines
-- [ ]Make sure your code is readable - it should follow the PEP 8 Style guide. Specifically, you should have docstrings on your methods and methods 
+- [ ] Make sure your code is readable - it should follow the PEP 8 Style guide. Specifically, you should have docstrings on your methods and methods 
 and variables should follow the lowercase_with_underscores naming convention.
