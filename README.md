@@ -1,12 +1,12 @@
 ## Instructions
 
 ### Part 1: Submit in ```.ipynb``` or ```.py```
-- [ ] Submit .ipynb or .py files. Make sure the file name contains your FULL NAME.
+- [ ] Submit .ipynb or .py file. Make sure the file name contains your FULL NAME.
 
 ### Part 2: Creating the ```generate_pi_estimate(width, draw)```
-- [ ]  Create a method ```generate_pi_estimate(width, draw)``` that takes in two parameters:
-  - [ ] An integer that defines the width and height (in “pixels”) of the quarter circle you will use to estimate the value of pi with.
-  - [ ] A boolean value that says whether the unit circle (with the corresponding bounding box shown above) is displayed.
+- [ ] Create a method ```generate_pi_estimate(width, draw)``` that takes in two parameters:
+- [ ] An integer that defines the width and height (in “pixels”) of the quarter circle you will use to estimate the value of pi with.
+- [ ] A boolean value that says whether the unit circle (with the corresponding bounding box shown above) is displayed.
 
 ### Part 3: Creating the ```draw_unit_circle(width)``` method
 - [ ]  Create a method called ```draw_unit_circle(width)``` that takes in a single parameter (an integer representing the height and width of the 
