@@ -1,3 +1,5 @@
+
+
 # importing the math package
 import math
 
@@ -16,14 +18,29 @@ circle_width = 0
 
 
 def generate_pi_estimate(width, draw):
+
+    global star_count
+    max_pixel_distance = width - 0.5
+
     # boolean check for passed in value
     # if true, calls the draw_unit_circle method
     if draw:
         draw_unit_circle(width)
 
+    # for looping the y-position in reversed manner
+    for y_position in reversed(range(0, width)):
+
+        # for looping the x-position
+        for x_position in range(0, width):
+            distance = math.sqrt(x_position ** 2 + y_position ** 2)
+
+            # if within bounds, print *
+            if distance <= max_pixel_distance:
+                star_count = star_count + 1
+
     # calculating the value of pi
-    pi = math.pi * width * width
-    return pi
+    pi_estimate = 4 * (star_count / width ** 2)
+    return pi_estimate
 
 
 """
@@ -55,7 +72,7 @@ def draw_unit_circle(width):
             distance = math.sqrt(x_position ** 2 + y_position ** 2)
 
             # if within bounds, print *
-            if distance < max_pixel_distance:
+            if distance <= max_pixel_distance:
                 star_count = star_count + 1
                 print("*", end="")
 
@@ -77,33 +94,34 @@ def draw_unit_circle(width):
 
 
 def generate_pi_given_error(delta):
-    width_set = int(input("Please set width of your circle: "))
 
-    pi_estimate = 4 * (star_count / width_set ** 2)
-    print(pi_estimate)
-    print(delta)
-    pi_error = pi_estimate - delta
-
-    return pi_error
+    pi_estimate = generate_pi_estimate(9, False)
+    if abs(pi_estimate - math.pi) <= delta:
+        return pi_estimate, star_count
 
 
-user_input = int(input("What would you like to do?"
+user_input = int(input("What would you like to do? \n"
                        "1. Generate a pi estimate of the circle you're trying to draw? \n"
                        "2. Generate a drawing of the unit circle? \n"
                        "3. Generate a given error for the pi estimate? \n"
                        "Please enter 1, 2 or 3 only: "
                        ""))
+
 if user_input == 1:
     set_width = int(input("Set the width of your circle: "))
     set_boolean = input("Would you like to draw the circle (y/n): ")
+
     if set_boolean == "y":
         set_boolean = True
+        print(generate_pi_estimate(set_width, set_boolean))
     elif set_boolean == "n":
         set_boolean = False
-    print(generate_pi_estimate(set_width, set_boolean))
+        print(generate_pi_estimate(set_width, set_boolean))
+
 elif user_input == 2:
     set_width = int(input("Set the width of your circle: "))
     draw_unit_circle(set_width)
+
 elif user_input == 3:
-    set_delta = float(input("Set a delta value: "))
+    set_delta = float(input("Please enter a delta value: "))
     print(generate_pi_given_error(set_delta))
