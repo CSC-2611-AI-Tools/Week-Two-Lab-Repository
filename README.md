@@ -1,4 +1,8 @@
-## Instructions
+# Week-Two-Lab-Repository
+This is repository dedicated to storing code that has been taken from lab two, which can be meant for future reference.
+
+## Lab 2: Pi Estimator Revisited
+Recall the Pi Estimator lab from CS 1011. The goal of this lab is to have you implement a solution to that problem (with some changes) in Python.
 
 ### Part 1: Submit in ```.ipynb``` or ```.py```
 - [x] Submit .ipynb or .py file. Make sure the file name contains your FULL NAME.
